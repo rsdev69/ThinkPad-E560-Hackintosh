@@ -186,6 +186,8 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
+		<key>HaltEnabler</key>
+		<false/>
 		<key>ResetAddress</key>
 		<string>0x0CF9</string>
 		<key>ResetValue</key>
@@ -201,8 +203,6 @@
 				<key>PStates</key>
 				<false/>
 			</dict>
-			<key>PluginType</key>
-			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
@@ -211,6 +211,8 @@
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
 		<string>ThinkMac</string>
+		<key>IgnoreNVRAMBoot</key>
+		<false/>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
@@ -236,7 +238,7 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<string>3</string>
+			<integer>3</integer>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -245,6 +247,8 @@
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<false/>
 			<key>FixOwnership</key>
 			<false/>
 			<key>Inject</key>
@@ -283,8 +287,6 @@
 			<key>Entries</key>
 			<true/>
 			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
 			<false/>
 			<key>Tool</key>
 			<true/>
@@ -347,7 +349,7 @@
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				QTnE6yo=
@@ -367,7 +369,7 @@
 				<key>MatchOS</key>
 				<string>10.12.x</string>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				iUXIOcbrUQ==
@@ -385,7 +387,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AAAIAAQAAACYAAAA
@@ -403,7 +405,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				6AMAAOgDAAA=
@@ -421,7 +423,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AQUJAAAIAACHAQAA
@@ -439,7 +441,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AgQKAAAIAACHAQAA
@@ -457,7 +459,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				kwLsEA==
@@ -475,7 +477,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -493,7 +495,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -511,7 +513,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -529,7 +531,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcYGAUmLvCQ=
@@ -547,7 +549,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcYGAUiLu2g=
@@ -565,7 +567,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcaGQwEAAAE=
@@ -647,226 +649,6 @@
 				<key>Replace</key>
 				<data>
 				AQAA6yU=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - darkvoid fcvo patch</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gflSqgAAdSk=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				gflSqgAAZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - PCI Error 1</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				QTnEdRs=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				QTnEZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - PCI Error 2</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				QQ+3zTnBdQw=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				QQ+3zTnBZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - PCI Error 3</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g33EBHQG
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				g33EBGaQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - whitelist patch (board-id), 10.12.dp1, credit RehabMan</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MdtMO33YdRI=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				Mdv/w5CQkJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - whitelist patch (board-id), 10.11.x, credit RehabMan</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MdtMO2XYdRI=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				Mdv/w5CQkJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - Airport-Extreme</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				axAAAHUN
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				axAAAJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94325 - 10.10.2+ 5Ghz US FCC, the-darkvoid</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGVVPrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - 5Ghz US FCC - alternate from Ramalama</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.11.x,10.12.x</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGI2HrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>BCM94352 - 5 GHz DE</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12</string>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				ZscGREXrKw==
 				</data>
 			</dict>
 		</array>
