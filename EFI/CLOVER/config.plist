@@ -236,7 +236,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<integer>3</integer>
 		</dict>
@@ -662,55 +662,15 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>04/09/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP121.88Z.0176.B00.1804091715</string>
-		<key>Board-ID</key>
-		<string>Mac-E43C1C25D4880AD6</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02706701QXDMT5JA</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-		<key>PlatformFeature</key>
-		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro12,1</string>
-		<key>SerialNumber</key>
-		<string>C02T713PH1DP</string>
-		<key>Version</key>
-		<string>1.0</string>
+		<string>MacBookPro13,1</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
-		<key>InjectSystemID</key>
-		<true/>
 	</dict>
 </dict>
 </plist>
