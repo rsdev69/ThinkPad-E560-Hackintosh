@@ -235,8 +235,6 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
 			<key>Inject</key>
 			<integer>3</integer>
 		</dict>
@@ -325,8 +323,6 @@
 				<data>
 				ILniAAAADzA=
 				</data>
-				<key>MatchOS</key>
-				<string>10.12</string>
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
@@ -339,7 +335,7 @@
 				<key>Comment</key>
 				<string>Skylake minStolenSize patch less or equal fStolenMemorySize assertion, 10.11.4 - based on Austere.J patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				QTnEdio=
@@ -359,7 +355,7 @@
 				<key>Comment</key>
 				<string>Skylake minStolenSize patch (credit RehabMan based on original by Austere.J) for Sierra</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				iUXIOcZ2UQ==
@@ -377,9 +373,49 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13 (credit PMHeart, , shdkpr2008)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				TIlduHZA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				TIlduOtA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 (credit Austere.J)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkBI/wVh6Qc=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60BI/wVh6Qc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Framebuffer - eDP</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AAAIAAIAAACYAAAA
@@ -397,7 +433,7 @@
 				<key>Comment</key>
 				<string>Framebuffer - brightness</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				bAUAAGwFAAA=
@@ -415,7 +451,7 @@
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105, 0x19160000 - T460 DP on left side</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQUJAAAEAACHAQAA
@@ -433,7 +469,7 @@
 				<key>Comment</key>
 				<string>HDMI-audio, port 0204, 0x19160000 - T460 HDMI on right side</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQKAAAEAACHAQAA
@@ -643,7 +679,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.12.x</string>
+				<string>10.12.x,10.13.x</string>
 				<key>Name</key>
 				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
