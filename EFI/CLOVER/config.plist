@@ -16,8 +16,6 @@
 				<true/>
 				<key>FixRegions</key>
 				<true/>
-				<key>FixShutdown</key>
-				<false/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
@@ -186,8 +184,6 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>ResetAddress</key>
 		<string>0x0CF9</string>
 		<key>ResetValue</key>
@@ -211,8 +207,8 @@
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
 		<string>ThinkMac</string>
-		<key>IgnoreNVRAMBoot</key>
-		<false/>
+		<key>Fast</key>
+		<true/>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
@@ -221,8 +217,6 @@
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>0</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -235,20 +229,50 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
 			<key>Inject</key>
-			<integer>3</integer>
+			<string>3</string>
 		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>IntelGFX</key>
 			<string>0x0000</string>
 		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAWGQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				FhkAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<false/>
 			<key>FixOwnership</key>
 			<false/>
 			<key>Inject</key>
@@ -277,6 +301,10 @@
 				</dict>
 			</array>
 		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -301,7 +329,7 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
@@ -344,12 +372,10 @@
 				<data>
 				QTnEdio=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				QTnE6yo=
@@ -364,12 +390,10 @@
 				<data>
 				iUXIOcZ2UQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				iUXIOcbrUQ==
@@ -377,57 +401,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13 (credit PMHeart, , shdkpr2008)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				TIlduHZA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				TIlduOtA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 (credit Austere.J)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				dkBI/wVh6Qc=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				60BI/wVh6Qc=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Framebuffer - eDP</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AAAIAAIAAACYAAAA
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AAAIAAQAAACYAAAA
@@ -442,10 +424,8 @@
 				<data>
 				bAUAAGwFAAA=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				6AMAAOgDAAA=
@@ -460,10 +440,8 @@
 				<data>
 				AQUJAAAEAACHAQAA
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AQUJAAAIAACHAQAA
@@ -478,10 +456,8 @@
 				<data>
 				AgQKAAAEAACHAQAA
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AgQKAAAIAACHAQAA
@@ -496,10 +472,8 @@
 				<data>
 				hBnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				kwLsEA==
@@ -514,10 +488,8 @@
 				<data>
 				hAjsEA==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -532,10 +504,8 @@
 				<data>
 				hQjsEA==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -550,10 +520,8 @@
 				<data>
 				gxnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				AAAAAA==
@@ -568,10 +536,8 @@
 				<data>
 				QcYGAEmLvCQ=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcYGAUmLvCQ=
@@ -586,10 +552,8 @@
 				<data>
 				QcYGAEiLu2g=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcYGAUiLu2g=
@@ -604,10 +568,8 @@
 				<data>
 				QcaGQwEAAAA=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleHDA</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				QcaGQwEAAAE=
@@ -622,8 +584,6 @@
 				<data>
 				g72M/v//EA==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
@@ -642,8 +602,6 @@
 				<data>
 				g710////EA==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
 				<key>Name</key>
@@ -655,6 +613,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Remove 15 port limit completely in 10.13.6</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<string>837D880F 0F83A704 0000</string>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<string>837D880F 90909090 9090</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Enable TRIM for non-Apple SSDs</string>
 				<key>Disabled</key>
 				<false/>
@@ -662,8 +634,6 @@
 				<data>
 				AEFQUExFIFNTRAA=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
@@ -673,22 +643,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Boot graphics glitch, 10.12.dp1 (credit denskop)</string>
+				<string>Boot graphics glitch, 10.13 beta (based on denskop patch)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
-				AQAAdSU=
+				AQAAdSI=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
-				<string>10.12.x</string>
+				<string>10.13.x</string>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				AQAA6yU=
+				AQAA6yI=
 				</data>
 			</dict>
 		</array>
@@ -702,8 +670,12 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BoardSerialNumber</key>
+		<string>xxxxxxxxxxxx</string>
 		<key>ProductName</key>
 		<string>MacBookPro13,1</string>
+		<key>SerialNumber</key>
+		<string>xxxxxxxxxxxx</string>
 		<key>Trust</key>
 		<true/>
 	</dict>
