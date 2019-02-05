@@ -209,6 +209,8 @@
 		<string>ThinkMac</string>
 		<key>Fast</key>
 		<true/>
+		<key>IgnoreNVRAMBoot</key>
+		<false/>
 		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
