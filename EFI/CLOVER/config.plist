@@ -206,9 +206,7 @@
 		<key>Arguments</key>
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>ThinkMac</string>
-		<key>Fast</key>
-		<true/>
+		<string>Think</string>
 		<key>IgnoreNVRAMBoot</key>
 		<false/>
 		<key>Log</key>
@@ -219,6 +217,8 @@
 		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>Timeout</key>
+		<integer>0</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -232,7 +232,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>3</integer>
+			<integer>14</integer>
 		</dict>
 		<key>FakeID</key>
 		<dict>
