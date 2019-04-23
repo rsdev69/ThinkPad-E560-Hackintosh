@@ -175,6 +175,20 @@
 					hkJBVEM=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change LPC to LPCB</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TFBDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TFBDQg==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -206,7 +220,7 @@
 		<key>Arguments</key>
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>Think</string>
+		<string>ThinkMac</string>
 		<key>IgnoreNVRAMBoot</key>
 		<false/>
 		<key>Log</key>
