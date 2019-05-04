@@ -69,19 +69,3 @@ Refer to this Guide for the details:
 </table>
 
 ![E560](screenshot/1.png)
-
-<style>
-table { 
-  
-  width: 100%;
-  border: 2px solid white;
-  margin: auto;
-  text-align: center; 
-  margin-bottom: 20px; 
-  width:auto; font-size: 16px; 
-  color: #FFF; 
-  } 
-  td {
-    text-align: left;
-  }
-</style>
