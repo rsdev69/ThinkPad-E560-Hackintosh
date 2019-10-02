@@ -16,8 +16,6 @@
 				<true/>
 				<key>FixRegions</key>
 				<true/>
-				<key>FixShutdown</key>
-				<false/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
@@ -81,12 +79,12 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT1 to SATA</string>
+					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
-					U0FUMQ==
+					U0FUMA==
 					</data>
 					<key>Replace</key>
 					<data>
@@ -95,16 +93,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _PTS to ZPTS</string>
+					<string>change LPC to LPCB</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUwE=
+					TFBDXw==
 					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUwE=
+					TFBDQg==
 					</data>
 				</dict>
 				<dict>
@@ -186,50 +184,28 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
-		<key>HaltEnabler</key>
-		<false/>
 		<key>ResetAddress</key>
 		<string>0x0CF9</string>
 		<key>ResetValue</key>
 		<string>0x06</string>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
-			<false/>
-			<key>Generate</key>
-			<dict>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-			</dict>
-		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>macOS</string>
+		<string>Mac</string>
 		<key>Fast</key>
 		<true/>
-		<key>IgnoreNVRAMBoot</key>
-		<false/>
-		<key>Log</key>
-		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
-		<key>Secure</key>
-		<false/>
 	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
 		<true/>
-		<key>UseARTFrequency</key>
-		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -274,10 +250,6 @@
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<false/>
-			<key>FixOwnership</key>
-			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
@@ -314,35 +286,16 @@
 			<false/>
 		</dict>
 		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
+		<true/>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>ThinkPad</string>
 	</dict>
-	<key>Graphics</key>
-	<dict>
-		<key>Inject</key>
-		<dict>
-			<key>Intel</key>
-			<false/>
-		</dict>
-	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleIntelCPUPM</key>
-		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>KernelLapic</key>
-		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
@@ -366,47 +319,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit PMHeart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4MDBQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g/sPkJCQkJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for non-Apple SSDs</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -416,10 +329,90 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch#1 10.14.4 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4cLBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/D4cLBAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch#2 10.14.4 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QYP/Dw+DlAQAAA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				QYP/Pw+DlAQAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch#3 10.14.4 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g+MP0+NBCd8=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g+M/0+NBCd8=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g32IDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g32IGw==
 				</data>
 			</dict>
 		</array>
@@ -442,6 +435,8 @@
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
