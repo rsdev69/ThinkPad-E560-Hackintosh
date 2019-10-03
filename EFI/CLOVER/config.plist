@@ -107,72 +107,74 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _WAK to ZWAK (T460)</string>
+					<string>change Method(_PTS,1,N) to ZPTS</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1dBSwk=
+					X1BUUw==
 					</data>
 					<key>Replace</key>
 					<data>
-					WldBSwk=
+					WlBUUw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
+					<string>change Method(_WAK,1,S) to ZWAK</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					hlwuX1NCX0JBVDA=
+					X1dBSw==
 					</data>
 					<key>Replace</key>
 					<data>
-					hlwuX1NCX0JBVEM=
+					WldBSw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
+					<string>Notify (\_SB.PCI0.LPCB.EC.BAT1）-&gt; BATC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					hlwuX1NCX0JBVDE=
+					Tm90aWZ5IChcX1NCLlBDSTAuTFBDQi5FQy5C
+					QVQx
 					</data>
 					<key>Replace</key>
 					<data>
-					hlwuX1NCX0JBVEM=
+					Tm90aWZ5IChcX1NCLlBDSTAuTFBDQi5FQy5C
+					QVRD
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Notify(BAT0 to Notify(BATC </string>
+					<string>Notify(BAT1, ...) -&gt; Notify(BATC, ...)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					hkJBVDA=
+					IE5vdGlmeSAoQkFUMQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					hkJBVEM=
+					IE5vdGlmeSAoQkFUQw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Notify(BAT1 to Notify(BATC </string>
+					<string>Notify(BAT0, ...) -&gt; Notify(BATC, ...)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					hkJBVDE=
+					IE5vdGlmeSAoQkFUMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					hkJBVEM=
+					IE5vdGlmeSAoQkFUQw==
 					</data>
 				</dict>
 			</array>
