@@ -135,7 +135,35 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Notify (\_SB.PCI0.LPCB.EC.BAT1）-&gt; BATC</string>
+					<string>BAT0 TO BATC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					hkJBVDA=
+					</data>
+					<key>Replace</key>
+					<data>
+					hkJBVEM=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BAT1 TO BATC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					hkJBVDE=
+					</data>
+					<key>Replace</key>
+					<data>
+					hkJBVEM=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>BAT2 To BATC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -147,34 +175,6 @@
 					<data>
 					Tm90aWZ5IChcX1NCLlBDSTAuTFBDQi5FQy5C
 					QVRD
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify(BAT1, ...) -&gt; Notify(BATC, ...)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					IE5vdGlmeSAoQkFUMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					IE5vdGlmeSAoQkFUQw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify(BAT0, ...) -&gt; Notify(BATC, ...)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					IE5vdGlmeSAoQkFUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					IE5vdGlmeSAoQkFUQw==
 					</data>
 				</dict>
 			</array>
