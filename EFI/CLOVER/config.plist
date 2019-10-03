@@ -256,26 +256,6 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Custom</key>
-		<dict>
-			<key>Comment</key>
-			<string>Windows Entries</string>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>Boot Windows 10</string>
-					<key>Ignore</key>
-					<false/>
-					<key>Type</key>
-					<string>Windows</string>
-					<key>Volume</key>
-					<string>Insert Windows Disk EFI Partition GUID here</string>
-				</dict>
-			</array>
-		</dict>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -286,7 +266,14 @@
 			<false/>
 		</dict>
 		<key>Scan</key>
-		<true/>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Linux</key>
+			<false/>
+			<key>Tool</key>
+			<true/>
+		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
