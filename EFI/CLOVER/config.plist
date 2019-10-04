@@ -16,6 +16,8 @@
 				<true/>
 				<key>FixRegions</key>
 				<true/>
+				<key>FixShutdown</key>
+				<false/>
 				<key>FixTMR</key>
 				<true/>
 			</dict>
@@ -79,12 +81,12 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
+					<string>change SAT1 to SATA</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
-					U0FUMA==
+					U0FUMQ==
 					</data>
 					<key>Replace</key>
 					<data>
@@ -93,49 +95,63 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change LPC to LPCB</string>
+					<string>change _PTS to ZPTS</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					TFBDXw==
+					X1BUUwE=
 					</data>
 					<key>Replace</key>
 					<data>
-					TFBDQg==
+					WlBUUwE=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_PTS,1,N) to ZPTS</string>
+					<string>change _WAK to ZWAK (T460)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1BUUw==
+					X1dBSwk=
 					</data>
 					<key>Replace</key>
 					<data>
-					WlBUUw==
+					WldBSwk=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_WAK,1,S) to ZWAK</string>
+					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1dBSw==
+					hlwuX1NCX0JBVDA=
 					</data>
 					<key>Replace</key>
 					<data>
-					WldBSw==
+					hlwuX1NCX0JBVEM=
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>BAT0 TO BATC</string>
+					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					hlwuX1NCX0JBVDE=
+					</data>
+					<key>Replace</key>
+					<data>
+					hlwuX1NCX0JBVEM=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Notify(BAT0 to Notify(BATC </string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -149,7 +165,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>BAT1 TO BATC</string>
+					<string>change Notify(BAT1 to Notify(BATC </string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -161,22 +177,6 @@
 					hkJBVEM=
 					</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>BAT2 To BATC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					Tm90aWZ5IChcX1NCLlBDSTAuTFBDQi5FQy5C
-					QVQx
-					</data>
-					<key>Replace</key>
-					<data>
-					Tm90aWZ5IChcX1NCLlBDSTAuTFBDQi5FQy5C
-					QVRD
-					</data>
-				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -186,10 +186,24 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
+		<key>HaltEnabler</key>
+		<false/>
 		<key>ResetAddress</key>
 		<string>0x0CF9</string>
 		<key>ResetValue</key>
 		<string>0x06</string>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>CStates</key>
+				<false/>
+				<key>PStates</key>
+				<false/>
+			</dict>
+		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
@@ -199,15 +213,23 @@
 		<string>Mac</string>
 		<key>Fast</key>
 		<true/>
+		<key>IgnoreNVRAMBoot</key>
+		<false/>
+		<key>Log</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
+		<key>Secure</key>
+		<false/>
 	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
 		<true/>
+		<key>UseARTFrequency</key>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -252,12 +274,36 @@
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>AddClockID</key>
+			<false/>
+			<key>FixOwnership</key>
+			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>Custom</key>
+		<dict>
+			<key>Comment</key>
+			<string>Windows Entries</string>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Boot Windows 10</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Volume</key>
+					<string>Insert Windows Disk EFI Partition GUID here</string>
+				</dict>
+			</array>
+		</dict>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -271,7 +317,7 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
-			<key>Linux</key>
+			<key>Legacy</key>
 			<false/>
 			<key>Tool</key>
 			<true/>
@@ -281,10 +327,22 @@
 		<key>Theme</key>
 		<string>ThinkPad</string>
 	</dict>
+	<key>Graphics</key>
+	<dict>
+		<key>Inject</key>
+		<dict>
+			<key>Intel</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>AppleIntelCPUPM</key>
+		<false/>
 		<key>AppleRTC</key>
 		<true/>
+		<key>KernelLapic</key>
+		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>
@@ -308,80 +366,22 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
+				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#1 10.14.4 ©PMHeart</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g/sPD4cLBAAA
+				g/sPD4MDBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>
-				g/s/D4cLBAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#2 10.14.4 ©PMHeart</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QYP/Dw+DlAQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
+				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				QYP/Pw+DlAQAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#3 10.14.4 ©PMHeart</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g+MP0+NBCd8=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>
-				g+M/0+NBCd8=
+				g/sPkJCQkJCQ
 				</data>
 			</dict>
 			<dict>
@@ -391,17 +391,35 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				g32IDw==
+				g710////EA==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.12.x</string>
 				<key>Name</key>
-				<string>AppleUSBXHCI</string>
+				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>
-				g32IGw==
+				g710////Gw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for non-Apple SSDs</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
@@ -424,8 +442,6 @@
 	<dict>
 		<key>InjectKexts</key>
 		<string>Detect</string>
-		<key>InjectSystemID</key>
-		<true/>
 	</dict>
 </dict>
 </plist>
