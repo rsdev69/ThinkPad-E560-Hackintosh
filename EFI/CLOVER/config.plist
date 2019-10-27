@@ -210,7 +210,7 @@
 		<key>Arguments</key>
 		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
-		<string>Mac</string>
+		<string>macOS</string>
 		<key>Fast</key>
 		<true/>
 		<key>IgnoreNVRAMBoot</key>
