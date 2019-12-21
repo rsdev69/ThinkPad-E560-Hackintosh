@@ -68,8 +68,9 @@ Refer to this Guide for the details:
 </tr>
 </table>
 
-![E560](screenshot/11.png)
 ![E560](screenshot/1.png)
+![E560](screenshot/11.png)
+![E560](screenshot/12.png)
 ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)
 ![E560](screenshot/4.png)
