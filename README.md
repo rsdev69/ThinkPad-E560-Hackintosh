@@ -70,6 +70,9 @@ Refer to this Guide for the details:
 
 ![E560](screenshot/1.png)
 ![E560](screenshot/11.png)
+![E560](screenshot/13.png)
+![E560](screenshot/14.png)
+![E560](screenshot/15.png)
 ![E560](screenshot/12.png)
 ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)
