@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>15A284</string>
+	<string>18E226</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
+	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>X86PlatformPlugin</string>
+	<string>CPUFriend</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.driver.X86PlatformPlugin</string>
+	<string>org.vanilla.driver.CPUFriend</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>X86PlatformPlugin</string>
+	<string>CPUFriend</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>9.9.9</string>
+	<string>1.2.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,46 +25,44 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>9.9.9</string>
+	<string>1.2.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8R174l</string>
+	<string>10E1001</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16D20</string>
+	<string>18E219</string>
 	<key>DTSDKName</key>
-	<string>macosx10.12internal</string>
+	<string>macosx10.14</string>
 	<key>DTXcode</key>
-	<string>0800</string>
+	<string>1020</string>
 	<key>DTXcodeBuild</key>
-	<string>8R174l</string>
+	<string>10E1001</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>X86PlatformPlugin</key>
+		<key>CPUFriend</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.X86PlatformPlugin</string>
+			<string>org.vanilla.driver.CPUFriend</string>
 			<key>IOClass</key>
-			<string>X86PlatformPlugin</string>
-			<key>IOParentMatch</key>
-			<dict>
-				<key>IOPropertyMatch</key>
-				<dict>
-					<key>plugin-type</key>
-					<integer>1</integer>
-				</dict>
-				<key>IOProviderClass</key>
-				<string>IOACPIPlatformDevice</string>
-			</dict>
-			<key>IOPlatformPowerProfile</key>
-			<dict>
-				<key>Name</key>
-				<string>Placeholder</string>
-			</dict>
+			<string>CPUFriend</string>
+			<key>IOMatchCategory</key>
+			<string>CPUFriend</string>
+			<key>IOProviderClass</key>
+			<string>IOResources</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+		</dict>
+		<key>CPUFriendPlatform</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.vanilla.driver.CPUFriend</string>
+			<key>IOClass</key>
+			<string>CPUFriendData</string>
 			<key>IOProbeScore</key>
-			<integer>9000</integer>
+			<integer>6000</integer>
 			<key>IOPropertyMatch</key>
 			<dict>
 				<key>IOCPUNumber</key>
@@ -77,35 +75,29 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>X86PlatformPlugin version 1.0.0, Copyright © 2003-2012 Apple Inc. All rights reserved.</string>
+	<string>Copyright © 2017 - 2019 PMheart. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.driver.AppleSMC</key>
-		<string>1.0.1d1</string>
-		<key>com.apple.driver.IOPlatformPluginFamily</key>
-		<string>1.0.0</string>
+		<key>as.vit9696.Lilu</key>
+		<string>1.2.0</string>
 		<key>com.apple.iokit.IOACPIFamily</key>
 		<string>1.0.0d1</string>
-		<key>com.apple.iokit.IOUSBFamily</key>
-		<string>8.0</string>
-		<key>com.apple.iokit.IOUSBHostFamily</key>
-		<string>1.0.1</string>
 		<key>com.apple.kpi.bsd</key>
-		<string>11.0.0</string>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.dsep</key>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>10.6</string>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>10.6</string>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>8.4</string>
-		<key>com.apple.kpi.private</key>
-		<string>8.0.0</string>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
-		<string>9.0.0</string>
+		<string>12.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Safe Boot</string>
+	<string>Root</string>
 </dict>
 </plist>

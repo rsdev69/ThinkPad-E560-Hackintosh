@@ -158,13 +158,17 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 -lilubetaall</string>
+		<string>kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
 		<string>macOS</string>
 		<key>Fast</key>
@@ -244,6 +248,21 @@
 		<dict>
 			<key>Comment</key>
 			<string>Windows Entries</string>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>Boot Windows 10</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Volume</key>
+					<string>Insert Windows Disk EFI Partition GUID here</string>
+				</dict>
+			</array>
 		</dict>
 		<key>Hide</key>
 		<array>
