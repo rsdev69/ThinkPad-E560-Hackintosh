@@ -1,6 +1,6 @@
 # Lenovo-E560-Clover
 
-This repo contains the files and scripts to install macOS on the Lenovo E560 family
+This repo contains the files and scripts to install macOS on the Lenovo E560 family. Stable.
 
 ## Hardware Status
 
