@@ -25,7 +25,7 @@ Wifi		    | Tp-link 725n | Working | -
 VGA Port		| Max Full HD 60hz | Working | -
 HDMI 1.4 Ports	| Max 4k 30hz | Working | -
 
-macOS Mojave 10.14.6            |  macOS Catalina 10.15.3
+macOS Mojave 10.15.4            |  macOS Catalina 10.14.6
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
