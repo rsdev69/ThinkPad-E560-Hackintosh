@@ -29,7 +29,7 @@ macOS Mojave 10.15.4            |  macOS Catalina 10.14.6
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
-![E560](screenshot/5.gif)  |  ![E560](screenshot/6.png)
+![E560](screenshot/5.png)  |  ![E560](screenshot/6.png)
 ![E560](screenshot/7.png)  |  ![E560](screenshot/8.png)
 ![E560](screenshot/9.png)  |  ![E560](screenshot/10.png)
 ![E560](screenshot/11.png)  |  ![E560](screenshot/12.png)
