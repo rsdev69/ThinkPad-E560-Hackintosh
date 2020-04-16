@@ -1,8 +1,13 @@
 # Lenovo-E560-Clover
 
-This repo contains the files and scripts to install macOS on the Lenovo E560 family. Stable.
+This repo contains the files and scripts to install macOS on the Lenovo E560 family.
+All i3/i5/i7 intel processor. Stable.
 
-## Hardware Status
+## CPU Power Management
+Low Frequency Mode (LFM) = 400MHz (TDP-down frequency for i3/i5/i7)
+Energy Performance Preference (EPP) = 80 (Balance power)
+
+## Hardware Status && what's working
 
 Type | Spec | Status | Link
 ---------|---------|:----------:|----------
@@ -25,11 +30,11 @@ Wifi		    | Tp-link 725n | Working | -
 VGA Port		| Max Full HD 60hz | Working | -
 HDMI 1.4 Ports	| Max 4k 30hz | Working | -
 
-macOS Mojave 10.15.4            |  macOS Catalina 10.14.6
+macOS Mojave 10.14.6            |  macOS Catalina 10.15.4
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
-![E560](screenshot/5.png)  |  ![E560](screenshot/6.png)
+![E560](screenshot/5.png)  |  ![E560](screenshot/6.gif)
 ![E560](screenshot/7.png)  |  ![E560](screenshot/8.png)
 ![E560](screenshot/9.png)  |  ![E560](screenshot/10.png)
 ![E560](screenshot/11.png)  |  ![E560](screenshot/12.png)
