@@ -4,150 +4,6 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>DSDT</key>
-		<dict>
-			<key>Fixes</key>
-			<dict>
-				<key>FixHPET</key>
-				<true/>
-				<key>FixIPIC</key>
-				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
-				<true/>
-				<key>FixShutdown</key>
-				<false/>
-				<key>FixTMR</key>
-				<true/>
-			</dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X09TSQ==</data>
-					<key>Replace</key>
-					<data>WE9TSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R0ZYMA==</data>
-					<key>Replace</key>
-					<data>SUdQVQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SEVDSQ==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT1 to SATA</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>U0FUMQ==</data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _PTS to ZPTS</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1BUUwE=</data>
-					<key>Replace</key>
-					<data>WlBUUwE=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _WAK to ZWAK (T460)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1dBSwk=</data>
-					<key>Replace</key>
-					<data>WldBSwk=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>hlwuX1NCX0JBVDA=</data>
-					<key>Replace</key>
-					<data>hlwuX1NCX0JBVEM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>hlwuX1NCX0JBVDE=</data>
-					<key>Replace</key>
-					<data>hlwuX1NCX0JBVEM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Notify(BAT0 to Notify(BATC </string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>hkJBVDA=</data>
-					<key>Replace</key>
-					<data>hkJBVEM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Notify(BAT1 to Notify(BATC </string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>hkJBVDE=</data>
-					<key>Replace</key>
-					<data>hkJBVEM=</data>
-				</dict>
-			</array>
-		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-		</array>
-		<key>HaltEnabler</key>
-		<false/>
-		<key>ResetAddress</key>
-		<string>0x0CF9</string>
-		<key>ResetValue</key>
-		<string>0x06</string>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -158,78 +14,226 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
-				<key>PluginType</key>
-				<false/>
 			</dict>
 		</dict>
+		<key>ResetValue</key>
+		<string>0x06</string>
+		<key>DSDT</key>
+		<dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Find</key>
+					<data>X0RTTQ==</data>
+					<key>Replace</key>
+					<data>WERTTQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R0ZYMA==</data>
+					<key>Replace</key>
+					<data>SUdQVQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>SEVDSQ==</data>
+					<key>Replace</key>
+					<data>SU1FSQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change HECI to IMEI</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>U0FUMQ==</data>
+					<key>Replace</key>
+					<data>U0FUQQ==</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change SAT1 to SATA</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1BUUwE=</data>
+					<key>Replace</key>
+					<data>WlBUUwE=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _PTS to ZPTS</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1dBSwk=</data>
+					<key>Replace</key>
+					<data>WldBSwk=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _WAK to ZWAK (T460)</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>hlwuX1NCX0JBVDA=</data>
+					<key>Replace</key>
+					<data>hlwuX1NCX0JBVEM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>hlwuX1NCX0JBVDE=</data>
+					<key>Replace</key>
+					<data>hlwuX1NCX0JBVEM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>hkJBVDA=</data>
+					<key>Replace</key>
+					<data>hkJBVEM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Notify(BAT0 to Notify(BATC </string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>hkJBVDE=</data>
+					<key>Replace</key>
+					<data>hkJBVEM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Notify(BAT1 to Notify(BATC </string>
+				</dict>
+			</array>
+			<key>Fixes</key>
+			<dict>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixRegions</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+				<key>FixShutdown</key>
+				<false/>
+				<key>FixIPIC</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>HaltEnabler</key>
+		<false/>
+		<key>DropTables</key>
+		<array>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
+		</array>
+		<key>ResetAddress</key>
+		<string>0x0CF9</string>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>kext-dev-mode=1</string>
-		<key>DefaultVolume</key>
-		<string>macOS</string>
-		<key>Fast</key>
-		<true/>
-		<key>IgnoreNVRAMBoot</key>
-		<false/>
-		<key>Log</key>
-		<false/>
-		<key>NeverHibernate</key>
-		<true/>
 		<key>NoEarlyProgress</key>
+		<true/>
+		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>Fast</key>
+		<true/>
+		<key>Log</key>
+		<false/>
+		<key>Arguments</key>
+		<string>kext-dev-mode=1</string>
+		<key>IgnoreNVRAMBoot</key>
+		<false/>
+		<key>DefaultVolume</key>
+		<string>macOS</string>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Theme</key>
+		<string>ThinkPad</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+		</array>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>FullTitle</key>
+					<string>Boot Windows 10</string>
+					<key>Ignore</key>
+					<false/>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Volume</key>
+					<string>Insert Windows Disk EFI Partition GUID here</string>
+				</dict>
+			</array>
+			<key>Comment</key>
+			<string>Windows Entries</string>
+		</dict>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+		</dict>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>HWPEnable</key>
-		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
+		<key>HWPEnable</key>
+		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>15</integer>
-		</dict>
-		<key>Properties</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AAAWGQ==</data>
-				<key>device-id</key>
-				<data>FhkAAA==</data>
-				<key>enable-cfl-backlight-fix</key>
-				<integer>1</integer>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-pipecount</key>
-				<data>AwAAAA==</data>
-				<key>framebuffer-portcount</key>
-				<data>AwAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-			</dict>
-		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -239,59 +243,48 @@
 			<key>Inject</key>
 			<false/>
 		</dict>
-	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>Custom</key>
+		<key>Audio</key>
 		<dict>
-			<key>Comment</key>
-			<string>Windows Entries</string>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>Boot Windows 10</string>
-					<key>Ignore</key>
-					<false/>
-					<key>Type</key>
-					<string>Windows</string>
-					<key>Volume</key>
-					<string>Insert Windows Disk EFI Partition GUID here</string>
-				</dict>
-			</array>
+			<key>Inject</key>
+			<integer>15</integer>
 		</dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-		</array>
-		<key>Mouse</key>
+		<key>Properties</key>
 		<dict>
-			<key>Enabled</key>
-			<false/>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-portcount</key>
+				<data>AwAAAA==</data>
+				<key>device-id</key>
+				<data>FhkAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAWGQ==</data>
+				<key>framebuffer-pipecount</key>
+				<data>AwAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>enable-cfl-backlight-fix</key>
+				<integer>1</integer>
+			</dict>
 		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
-		<key>Theme</key>
-		<string>ThinkPad</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
-			<true/>
-		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
@@ -304,70 +297,70 @@
 		<false/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>KernelLapic</key>
-		<false/>
 		<key>KernelPm</key>
 		<true/>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>ILniAAAADzA=</data>
-				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
-			</dict>
-		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Find</key>
+				<data>g/sPD4MDBQAA</data>
 				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/sPD4MDBQAA</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>g/sPkJCQkJCQ</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 			</dict>
 			<dict>
+				<key>Find</key>
+				<data>g710////EA==</data>
 				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g710////EA==</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AppleUSBXHCIPCI</string>
 				<key>Replace</key>
 				<data>g710////Gw==</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<true/>
 				<key>Find</key>
 				<data>AEFQUExFIFNTRAA=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
+				<key>Disabled</key>
+				<false/>
+				<key>Comment</key>
+				<string>Enable TRIM for non-Apple SSDs</string>
+				<key>InfoPlistPatch</key>
+				<false/>
+			</dict>
+		</array>
+		<key>KernelLapic</key>
+		<false/>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Find</key>
+				<data>ILniAAAADzA=</data>
+				<key>Replace</key>
+				<data>ILniAAAAkJA=</data>
+				<key>Disabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 			</dict>
 		</array>
 	</dict>
@@ -380,15 +373,15 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>ProductName</key>
-		<string>MacBookPro13,1</string>
 		<key>Trust</key>
 		<true/>
+		<key>ProductName</key>
+		<string>MacBookPro13,1</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 	</dict>
 </dict>
 </plist>
