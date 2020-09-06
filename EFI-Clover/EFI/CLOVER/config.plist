@@ -174,7 +174,7 @@
 		<key>Log</key>
 		<false/>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1</string>
+		<string>kext-dev-mode=1 igfxonln=1</string>
 		<key>IgnoreNVRAMBoot</key>
 		<false/>
 		<key>DefaultVolume</key>
