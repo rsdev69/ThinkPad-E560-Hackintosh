@@ -1,6 +1,6 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
-``` This repo contains the files and scripts to install macOS on the Lenovo E560 family. All i3/i5/i7 intel processor. First OpenCore build for E560. Stable OpenCore 0.6.0 ```
+``` This repo contains the files and scripts to install macOS on the Lenovo E560 family. Stable OpenCore 0.6.0 ```
 
 ## Hardware Status
 
@@ -14,10 +14,7 @@ Ethernet		| Intel I219V PCI Express Gigabit Ethernet: | Working |
 Memory		    | 8192 MB DDR3L-1600 MHz / PC3L-12800, 2 slots | Working | 
 Graphics		| Intel HD Graphics 520 | Working | 
 Audio			| Conexant HD Audio CX20753/4 | Working |
-WiFi			| Intel Dual Band Wireless-AC 3165 - M.2 Card | Not Working | 
-Bluetooth		| Intel(R) Wireless Bluetooth(R) | Working | 
 Touchpad		| ELAN | Working | 
-Keyboard		| Keyboard |Working | 
 USB Ports		| 3 x USB 3.0 | Working | 
 Storage		    | Goodram SSD 256GB | Working | 
 Wifi		    | Tp-link 725n | Working | 
@@ -67,10 +64,6 @@ add results to PlatformInfo > Generic > MLB, SystemSerialNumber and SystemUUID
 ## What's not working ⚠️
 
 - [ ] Fingerprint Reader
-
-- [ ] HDMI Video output in Catalina 10.15.6
-
-- [ ] Safari DRM
 
 - [ ] Card Reader
 
