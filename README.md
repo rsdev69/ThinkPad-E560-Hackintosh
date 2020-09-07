@@ -1,6 +1,8 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
-``` This repo contains the files and scripts to install macOS on the Lenovo E560 family. Stable OpenCore 0.6.0 ```
+This repo contains the files and scripts to install macOS on the Lenovo E560 family. 
+
+Stable OpenCore 0.6.0 
 
 ## Hardware Status
 
@@ -52,6 +54,8 @@ HDMI 1.4 Ports	| Max 4k 30hz | Working |
 * [Acidanthera's OpenCore and kexts development](https://github.com/acidanthera)
 
 * [@MSzturc](https://github.com/MSzturc) for keyboard map and [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant)
+
+* [xzhih](https://github.com/xzhih)'s [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) to improve quality of system UI
 
 ## True Macbook experience 
 
