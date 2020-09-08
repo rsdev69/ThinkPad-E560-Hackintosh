@@ -1322,10 +1322,10 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>run-efi-updater</key>
-				<string>No</string>
 				<key>boot-args</key>
 				<string>igfxonln=1</string>
+				<key>run-efi-updater</key>
+				<string>No</string>
 				<key>csr-active-config</key>
 				<data>AwAAAA==</data>
 			</dict>
