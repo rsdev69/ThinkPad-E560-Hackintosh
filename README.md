@@ -71,7 +71,7 @@ add results to PlatformInfo > Generic > MLB, SystemSerialNumber and SystemUUID
 
 - [ ] Card Reader
 
-macOS Catalina 10.15.6 macOS | macOS Mojave 10.14.6
+macOS Catalina 10.15.7 |
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
