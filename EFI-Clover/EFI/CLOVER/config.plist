@@ -68,7 +68,7 @@
 					<key>Replace</key>
 					<data>U0FUQQ==</data>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Comment</key>
 					<string>change SAT1 to SATA</string>
 				</dict>
@@ -81,36 +81,6 @@
 					<false/>
 					<key>Comment</key>
 					<string>change _PTS to ZPTS</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1dBSwk=</data>
-					<key>Replace</key>
-					<data>WldBSwk=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change _WAK to ZWAK (T460)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>hlwuX1NCX0JBVDA=</data>
-					<key>Replace</key>
-					<data>hlwuX1NCX0JBVEM=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change Notify(\_SB.BAT0 to Notify(_SB.BATC</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>hlwuX1NCX0JBVDE=</data>
-					<key>Replace</key>
-					<data>hlwuX1NCX0JBVEM=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>change Notify(\_SB.BAT1 to Notify(_SB.BATC</string>
 				</dict>
 				<dict>
 					<key>Find</key>
@@ -174,7 +144,7 @@
 		<key>Log</key>
 		<false/>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 igfxonln=1</string>
+		<string>kext-dev-mode=1</string>
 		<key>IgnoreNVRAMBoot</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -303,47 +273,15 @@
 		<array>
 			<dict>
 				<key>Find</key>
-				<data>g/sPD4MDBQAA</data>
-				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit PMHeart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/sPkJCQkJCQ</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>g710////EA==</data>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>g710////Gw==</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-			</dict>
-			<dict>
-				<key>Find</key>
 				<data>AEFQUExFIFNTRAA=</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
-				<string>Enable TRIM for non-Apple SSDs</string>
+				<string>Enable TRIM for SSD</string>
 				<key>InfoPlistPatch</key>
 				<false/>
 			</dict>
@@ -381,7 +319,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 	</dict>
 </dict>
 </plist>
