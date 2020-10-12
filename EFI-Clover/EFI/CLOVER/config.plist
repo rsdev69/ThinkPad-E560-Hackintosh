@@ -121,13 +121,6 @@
 		</dict>
 		<key>HaltEnabler</key>
 		<false/>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-		</array>
 		<key>ResetAddress</key>
 		<string>0x0CF9</string>
 	</dict>
@@ -165,21 +158,6 @@
 		</array>
 		<key>Custom</key>
 		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>FullTitle</key>
-					<string>Boot Windows 10</string>
-					<key>Ignore</key>
-					<false/>
-					<key>Type</key>
-					<string>Windows</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Volume</key>
-					<string>Insert Windows Disk EFI Partition GUID here</string>
-				</dict>
-			</array>
 			<key>Comment</key>
 			<string>Windows Entries</string>
 		</dict>
@@ -213,13 +191,30 @@
 			<key>Inject</key>
 			<false/>
 		</dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>15</integer>
-		</dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,6</string>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>Ethernet Connection I219-V</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>15</integer>
+				<key>model</key>
+				<string>Intel Sunrise Point-LP HD Audio</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
+				<key>hda-idle-support</key>
+				<string>1</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>framebuffer-con2-enable</key>
@@ -273,13 +268,45 @@
 		<array>
 			<dict>
 				<key>Find</key>
+				<data>g/sPD4MDBQAA</data>
+				<key>Comment</key>
+				<string>disable port limit in XHCI kext (credit PMHeart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>g/sPkJCQkJCQ</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>g710////EA==</data>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>g710////Gw==</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+			</dict>
+			<dict>
+				<key>Find</key>
 				<data>AEFQUExFIFNTRAA=</data>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>InfoPlistPatch</key>
@@ -288,19 +315,6 @@
 		</array>
 		<key>KernelLapic</key>
 		<false/>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Find</key>
-				<data>ILniAAAADzA=</data>
-				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-			</dict>
-		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
