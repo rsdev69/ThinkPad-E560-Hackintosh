@@ -1,25 +1,29 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
-This repo contains the files and scripts to install macOS on the Lenovo E560 family. 
+<img align="right" src="https://shop.lenovo.ua/storage/app/uploads/public/5ef/ef6/07a/5efef607a603c639894404.jpg" alt="E560 macOS" width="300">
 
-Stable OpenCore 0.6.0 
+[![macOS](https://img.shields.io/badge/macOS-Catalina%20%26%20Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-green)](https://github.com/acidanthera/OpenCorePkg)
+[![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
+
+This repo contains the files and scripts to install macOS on the Lenovo E560 family. 
 
 ## Hardware Status
 
 Type | Spec | Status 
 ---------|---------|:----------
 Computer		| Lenovo ThinkPad E560   | Working | 
-BIOS Version	| LENOVO v1.40 | Working | -
-CPU				| DualCore Intel® Core™ i3 6100U Processor, 2300 MHz | Working | 
-Display		    | 15.6 inch 16:9, 1920 x 1080 pixel, LP156WF6-SPK2 | Working |
-Ethernet		| Intel I219V PCI Express Gigabit Ethernet: | Working |
-Memory		    | 8192 MB DDR3L-1600 MHz / PC3L-12800, 2 slots | Working | 
+BIOS Version	| LENOVO v1.40 | Working | |
+CPU				| Intel i3 6100U 2300 MHz | Working | 
+Display		    | 15.6 inch 16:9, 1920 x 1080 pixel | Working |
+Ethernet		| Intel I219V Gigabit Ethernet | Working |
+Memory		    | 8192 MB DDR3L-1600 MHz / PC3L-12800 | Working | 
 Graphics		| Intel HD Graphics 520 | Working | 
 Audio			| Conexant HD Audio CX20753/4 | Working |
-Touchpad		| ELAN | Working | 
+Touchpad		| Elan Touchpad | Working | 
 USB Ports		| 3 x USB 3.0 | Working | 
 Storage		    | Goodram SSD 256GB | Working | 
-Wifi		    | Tp-link 725n | Working | 
+Wifi		    | IntelAC 3165 | Working | 
 VGA Port		| Max Full HD 60hz | Working | 
 HDMI 1.4 Ports	| Max 4k 30hz | Working | 
 
@@ -60,10 +64,16 @@ HDMI 1.4 Ports	| Max 4k 30hz | Working |
 ## True Macbook experience 
 
 #### [Generate your own SMBIOS](https://github.com/corpnewt/GenSMBIOS)
-```sh
-run the script with MacbookPro13,1
-add results to PlatformInfo > Generic > MLB, SystemSerialNumber and SystemUUID
-```
+
+1. Launch Terminal.app
+1. Copy the following script, paste it into the Terminal window, then press ENTER
+   ```bash
+   git clone https://github.com/corpnewt/GenSMBIOS && cd GenSMBIOS && ./GenSMBIOS.command 
+   ```
+1. Type `2`, then press ENTER
+1. Drag your `config.plist` inside the Terminal window
+1. Type `3`, then press ENTER
+1. Type `MacbookPro13,1`, then press ENTER
 
 ## What's not working ⚠️
 
@@ -71,7 +81,7 @@ add results to PlatformInfo > Generic > MLB, SystemSerialNumber and SystemUUID
 
 - [ ] Card Reader
 
-macOS Catalina 10.15.7 |
+macOS  |macOS
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
