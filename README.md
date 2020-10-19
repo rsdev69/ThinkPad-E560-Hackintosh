@@ -1,7 +1,5 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
-<img align="right" src="https://shop.lenovo.ua/storage/app/uploads/public/5ef/ef6/07a/5efef607a603c639894404.jpg" alt="E560 macOS" width="300">
-
 [![macOS](https://img.shields.io/badge/macOS-Catalina%20%26%20Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-green)](https://github.com/acidanthera/OpenCorePkg)
 [![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
