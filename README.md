@@ -83,10 +83,13 @@ macOS  |macOS
 :-------------------------:|:-------------------------:
 ![E560](screenshot/1.png)  |  ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)  |  ![E560](screenshot/4.png)
-![E560](screenshot/7.png)  |  ![E560](screenshot/6.gif)
-![E560](screenshot/5.png)  |  ![E560](screenshot/8.png)
+![E560](screenshot/5.png)  |  ![E560](screenshot/6.png)
+![E560](screenshot/7.png)  |  ![E560](screenshot/8.png)
 ![E560](screenshot/9.png)  |  ![E560](screenshot/10.png)
-![E560](screenshot/11.png)  |  
+![E560](screenshot/11.png)  | ![E560](screenshot/12.png) 
+![E560](screenshot/13.png)  | ![E560](screenshot/14.png) 
+![E560](screenshot/15.png)  | ![E560](screenshot/16.png) 
+![E560](screenshot/17.png)  | ![E560](screenshot/18.png) 
 
 ## A reward 
 All the project is made for free!!!
