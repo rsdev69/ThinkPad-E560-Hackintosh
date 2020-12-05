@@ -45,33 +45,9 @@ HDMI 1.4 Ports	| Max 4k 30hz | Working |
 
 ## General knowledge & credits
 
-* [Why OpenCore](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html)
-
-* [Dortania's guide to install macOS](https://dortania.github.io/OpenCore-Install-Guide/)
-
-* [SSDT patches from OC-little](https://translate.google.it/translate?sl=zh-CN&tl=en&u=https%3A%2F%2Fgithub.com%2Fdaliansky%2FOC-little)
-
-* Useful tools by [@CorpNewt](https://github.com/corpnewt)
-
-* [Acidanthera's OpenCore and kexts development](https://github.com/acidanthera)
-
 * [@MSzturc](https://github.com/MSzturc) for keyboard map and [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant)
 
 * [xzhih](https://github.com/xzhih)'s [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) to improve quality of system UI
-
-## True Macbook experience 
-
-#### [Generate your own SMBIOS](https://github.com/corpnewt/GenSMBIOS)
-
-1. Launch Terminal.app
-1. Copy the following script, paste it into the Terminal window, then press ENTER
-   ```bash
-   git clone https://github.com/corpnewt/GenSMBIOS && cd GenSMBIOS && ./GenSMBIOS.command 
-   ```
-1. Type `2`, then press ENTER
-1. Drag your `config.plist` inside the Terminal window
-1. Type `3`, then press ENTER
-1. Type `MacbookPro13,1`, then press ENTER
 
 ## What's not working ⚠️
 
