@@ -968,14 +968,14 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-pipecount</key>
 				<data>AwAAAA==</data>
 				<key>framebuffer-portcount</key>
 				<data>AwAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
@@ -1454,7 +1454,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
-			<false/>
+			<true/>
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>DmgLoading</key>
@@ -1491,7 +1491,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string></string>
+				<string>-v keepsyms=1</string>
 				<key>csr-active-config</key>
 				<data>AwAAAA==</data>
 				<key>run-efi-updater</key>
@@ -1558,22 +1558,22 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>MLB</key>
-			<string></string>
+			<string>M0000000000000001</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data></data>
+			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
 			<true/>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>MacBookPro13,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>W00000000001</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>00000000-0000-0000-0000-000000000000</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1717,8 +1717,7 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
+		<dict>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>

@@ -1,7 +1,7 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
-[![macOS](https://img.shields.io/badge/macOS-Catalina%20%26%20Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.2-green)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS](https://img.shields.io/badge/macOS-Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.5-green)](https://github.com/acidanthera/OpenCorePkg)
 [![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560 family. 
