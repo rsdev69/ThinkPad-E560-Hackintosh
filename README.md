@@ -45,8 +45,6 @@ HDMI 1.4 Ports	| Max 4k 30hz | Working |
 
 ## General knowledge & credits
 
-* [@MSzturc](https://github.com/MSzturc) for keyboard map and [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant)
-
 * [xzhih](https://github.com/xzhih)'s [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) to improve quality of system UI
 
 ## What's not working ⚠️
