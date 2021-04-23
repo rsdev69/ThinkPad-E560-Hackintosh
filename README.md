@@ -1,7 +1,7 @@
 # Lenovo Thinkpad E560 (Clover, OpenCore bootloader)
 
 [![macOS](https://img.shields.io/badge/macOS-Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.8-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-green)](https://github.com/acidanthera/OpenCorePkg)
 [![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560💻 family.
@@ -54,19 +54,13 @@ This repo contains the files and scripts to install macOS on the Lenovo E560💻
 ## What's not working ⚠️
 
 - [ ] Fingerprint Reader
-
+- [ ] Touchpad gestures
 ## ScreenShots
 
 ![E560](screenshot/1.png)  
 ![E560](screenshot/2.png)
-![E560](screenshot/0.png)
-![E560](screenshot/4.png)  
-![E560](screenshot/5.png)  
-![E560](screenshot/6.png)  
 ![E560](screenshot/3.png)
-![E560](screenshot/7.png)
-![E560](screenshot/8.png)
-![E560](screenshot/9.png)
+![E560](screenshot/4.png)  
 
 ## A reward❤️
 
