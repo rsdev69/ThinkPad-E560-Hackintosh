@@ -30,7 +30,7 @@ This repo contains the files and scripts to install macOS on the Lenovo E560💻
 
 | Menu     |                   |                                 | Setting     |
 |----------|-------------------|---------------------------------|-------------|
-| Config   | USB               | UEFI BIOS Support                | `Enable `   |
+| Config   | USB               | UEFI BIOS Support               | `Enable `   |
 |          | Power             | Intel SpeedStep Technology      | `Enable `   |
 |          |                   | CPU Power Management            | `Enable `   |
 |          | CPU               | Hyper-Threading Technology      | `Enable `   |
