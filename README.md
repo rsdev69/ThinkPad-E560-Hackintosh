@@ -56,7 +56,7 @@ This repo contains the files and scripts to install macOS on the Lenovo E560💻
 - [ ] Fingerprint Reader
 - [ ] Touchpad gestures
 ## ScreenShots
-
+ 
 ![E560](screenshot/1.png)  
 ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)
