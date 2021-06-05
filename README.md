@@ -1,7 +1,7 @@
 # Lenovo Thinkpad E560 OpenCore 0.7.0
 
 [![macOS](https://img.shields.io/badge/macOS-Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.6.9-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.0-green)](https://github.com/acidanthera/OpenCorePkg)
 [![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560 family.
@@ -9,22 +9,22 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 ## Hardware Status 💻
 
 | Type           | Spec                                | Status|
-|:---------------|:------------------------------------|:------|
-| Computer       | Lenovo ThinkPad E560                | ✅ |
-| BIOS Version   | LENOVO v1.40                        | ✅ |     
-| CPU            | Intel i3 6100U 2300 MHz             | ✅ |
-| Display        | 15.6 inch 16:9, 1920 x 1080 pixel   | ✅ |
-| Ethernet       | Intel I219V Gigabit Ethernet        | ✅ |
-| Memory         | 8192 MB DDR3L-1600 MHz / PC3L-12800 | ✅ |
-| Graphics       | Intel HD Graphics 520               | ✅ |
-| Audio          | Conexant HD Audio CX20753/4         | ✅ |
-| Touchpad       | Elan Touchpad                       | ✅ |
-| USB Ports      | 3 x USB 3.0                         | ✅ |
-| Storage        | Goodram SSD 256GB                   | ✅ |
-| Wifi            | IntelAC 3165                       | ✅ |
-| VGA Port       | Max Full HD 60hz                    | ✅ |
-| Card Reader    | 10/15 MB/s                          | ✅ |
-| HDMI 1.4 Ports | Max 4k 30hz                         | ✅ |
+|----------------|-------------------------------------|-------|
+| Computer       | Lenovo ThinkPad E560                |   ✅  |
+| BIOS Version   | LENOVO v1.40                        |   ✅  |
+| CPU            | Intel i3 6100U 2300 MHz             |   ✅  |
+| Display        | 15.6 inch 16:9, 1920 x 1080 pixel   |   ✅  |
+| Ethernet       | Intel I219V Gigabit Ethernet        |   ✅  |
+| Memory         | 8192 MB DDR3L-1600 MHz / PC3L-12800 |   ✅  |
+| Graphics       | Intel HD Graphics 520               |   ✅  |
+| Audio          | Conexant HD Audio CX20753/4         |   ✅  |
+| Touchpad       | Elan Touchpad                       |   ✅  |
+| USB Ports      | 3 x USB 3.0                         |   ✅  |
+| Storage        | Goodram SSD 256GB                   |   ✅  |
+| Wifi            | IntelAC 3165                       |   ✅  |
+| VGA Port       | Max Full HD 60hz                    |   ✅  |
+| Card Reader    | 10/15 MB/s                          |   ✅  |
+| HDMI 1.4 Ports | Max 4k 30hz                         |   ✅  |
 
 ## Bios settings 💾
 
