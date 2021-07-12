@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H1217</string>
+	<string>19G73</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Keyboard</string>
 	<key>CFBundleGetInfoString</key>
-	<string>2.2.4, Copyright Apple Computer, Inc. 2000-2003, RehabMan 2012-2013</string>
+	<string>6.0.0, Copyright Apple Computer, Inc. 2000-2003, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
-	<string>as.acidanthera.voodoo.driver.PS2Keyboard</string>
+	<string>org.rehabman.voodoo.driver.PS2Keyboard</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.2.4</string>
+	<string>6.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,29 +25,27 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.2.4</string>
+	<string>6.0.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12B45b</string>
-	<key>DTPlatformName</key>
-	<string>macosx</string>
+	<string>11E708</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>20A2408</string>
+	<string>19G68</string>
 	<key>DTSDKName</key>
-	<string>macosx11.0</string>
+	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1220</string>
+	<string>1160</string>
 	<key>DTXcodeBuild</key>
-	<string>12B45b</string>
+	<string>11E708</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ApplePS2Keyboard</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Keyboard</string>
+			<string>org.rehabman.voodoo.driver.PS2Keyboard</string>
 			<key>IOClass</key>
 			<string>ApplePS2Keyboard</string>
 			<key>IOProviderClass</key>
@@ -277,6 +275,14 @@
 				</dict>
 				<key>Default</key>
 				<dict>
+					<key>ActionSwipeDown</key>
+					<string>3b d, 37 d, 7d d, 7d u, 37 u, 3b u</string>
+					<key>ActionSwipeLeft</key>
+					<string>3b d, 37 d, 7b d, 7b u, 37 u, 3b u</string>
+					<key>ActionSwipeRight</key>
+					<string>3b d, 37 d, 7c d, 7c u, 37 u, 3b u</string>
+					<key>ActionSwipeUp</key>
+					<string>3b d, 37 d, 7e d, 7e u, 37 u, 3b u</string>
 					<key>Breakless PS2</key>
 					<array>
 						<string>;Items must be strings in the form of breaklessscan (in hex)</string>
@@ -306,7 +312,7 @@
 					<key>Swap capslock and left control</key>
 					<false/>
 					<key>Swap command and option</key>
-					<false/>
+					<true/>
 					<key>Use ISO layout keyboard</key>
 					<false/>
 					<key>alt_handler_id</key>
@@ -596,13 +602,11 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.11</string>
+	<string>10.13</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
-		<string>2.2.4</string>
-		<key>com.apple.iokit.IOHIDFamily</key>
-		<string>1.0.0b1</string>
+		<key>com.apple.iokit.IOHIDSystem</key>
+		<string>1.1</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>8.0.0</string>
 		<key>com.apple.kpi.iokit</key>
@@ -613,8 +617,12 @@
 		<string>8.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
 		<string>8.0.0</string>
+		<key>org.rehabman.voodoo.driver.PS2Controller</key>
+		<string>6.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
+	<key>Source Code</key>
+	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>
