@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20G624</string>
+	<string>21E258</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
@@ -51,7 +51,7 @@
 			<key>IOClass</key>
 			<string>ApplePS2ALPSGlidePoint</string>
 			<key>IOProbeScore</key>
-			<integer>1500</integer>
+			<integer>6000</integer>
 			<key>IOProviderClass</key>
 			<string>ApplePS2MouseDevice</string>
 			<key>Platform Profile</key>
@@ -100,7 +100,11 @@
 					<key>ProcessUSBMouseStopsTrackpad</key>
 					<true/>
 					<key>QuietTimeAfterTyping</key>
-					<integer>100000000</integer>
+					<integer>500000000</integer>
+					<key>Resolution</key>
+					<integer>400</integer>
+					<key>ScrollResolution</key>
+					<integer>400</integer>
 					<key>USBMouseStopsTrackpad</key>
 					<integer>0</integer>
 					<key>UnitsPerMMX</key>
