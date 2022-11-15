@@ -1,7 +1,7 @@
-# Lenovo Thinkpad E560 OpenCore 0.8.5
+# Lenovo Thinkpad E560 OpenCore 0.8.6
 
 [![macOS](https://img.shields.io/badge/macOS-Big%20Sur-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.5-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.8.6-green)](https://github.com/acidanthera/OpenCorePkg)
 [![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560 family.
@@ -21,7 +21,7 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 | Touchpad       | Elan Touchpad                       |   ✅  |
 | USB Ports      | 3 x USB 3.0                         |   ✅  |
 | Storage        | Goodram SSD 256GB                   |   ✅  |
-| Wifi            | IntelAC 3165                       |   ✅  |
+| Wifi           | IntelAC 3165                        |   ✅  |
 | VGA Port       | Max Full HD 60hz                    |   ✅  |
 | Card Reader    | 10/15 MB/s                          |   ✅  |
 | HDMI 1.4 Ports | Max 4k 30hz                         |   ✅  |
@@ -55,11 +55,13 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 
 - [ ] Fingerprint Reader
 ## ScreenShots
- 
+
 ![E560](screenshot/1.png)  
 ![E560](screenshot/2.png)
 ![E560](screenshot/3.png)
 ![E560](screenshot/4.png)  
+![E560](screenshot/5.png) 
+![E560](screenshot/6.png) 
 
 ## A reward❤️
 
