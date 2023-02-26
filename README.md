@@ -11,7 +11,7 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 | Type           | Spec                                | Status|
 |----------------|-------------------------------------|-------|
 | Computer       | Lenovo ThinkPad E560                |   ✅  |
-| BIOS Version   | LENOVO v1.40                        |   ✅  |
+| BIOS Version   | LENOVO v1.44                        |   ✅  |
 | CPU            | Intel i3 6100U 2300 MHz             |   ✅  |
 | Display        | 15.6 inch 16:9, 1920 x 1080 pixel   |   ✅  |
 | Ethernet       | Intel I219V Gigabit Ethernet        |   ✅  |
