@@ -62,7 +62,3 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 ![E560](screenshot/4.png)  
 ![E560](screenshot/5.png) 
 ![E560](screenshot/6.png) 
-
-## A reward❤️
-
-All the project is made for free!!!
