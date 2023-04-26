@@ -2,7 +2,6 @@
 
 [![macOS](https://img.shields.io/badge/macOS-Ventura-blue)](https://developer.apple.com/documentation/macos-release-notes)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.9.1-green)](https://github.com/acidanthera/OpenCorePkg)
-[![LICENSE](https://img.shields.io/badge/license-MIT-purple)](/LICENSE)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560 family.
  
@@ -51,9 +50,6 @@ This repo contains the files and scripts to install macOS on the Lenovo E560 fam
 - [xzhih](https://github.com/xzhih)'s [one-key-hidpi](https://github.com/xzhih/one-key-hidpi) to improve quality of system UI
 - [simprecicchiani](https://github.com/simprecicchiani) [ThinkPad-T460s-macOS-OpenCore](https://github.com/simprecicchiani/ThinkPad-T460s-macOS-OpenCore) to make ACPI files
 
-## What's not working ⚠️
-
-- [ ] Fingerprint Reader
 ## ScreenShots
 
 ![E560](screenshot/1.png)  
