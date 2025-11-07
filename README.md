@@ -1,7 +1,7 @@
-# Lenovo Thinkpad E560 OpenCore 1.0.4
+# Lenovo Thinkpad E560 OpenCore 1.0.6
 
 [![macOS](https://img.shields.io/badge/macOS-Ventura-blue)](https://developer.apple.com/documentation/macos-release-notes)
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.7-green)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-1.0.6-green)](https://github.com/acidanthera/OpenCorePkg)
 
 This repo contains the files and scripts to install macOS on the Lenovo E560 family.
  
