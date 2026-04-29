@@ -1,0 +1,92 @@
+Supported NICs
+==============
+
+5 Series
+- 82578LM
+- 82578LC
+- 82578DM
+- 82578DC
+
+6 and 7 Series
+- 82579LM
+- 82579V
+
+8 and 9 Series
+- I217LM
+- I217V
+- I218LM
+- I218V
+- I218LM2
+- I218V2
+- I218LM3
+
+200, 300 Series and above
+- I219LM
+- I219V
+
+Key Features of the Driver
+==========================
+
+- Support for multisegment packets relieving the network stack of unnecessary copy operations when assembling packets for transmission.
+- No-copy receive and transmit. Only small packets are copied on reception because creating a copy is more efficient than allocating a new buffer.
+- TCP, UDP and IPv4 checksum offload (receive and transmit).
+- Support for TCP/IPv6 and UDP/IPv6 checksum offload.
+- Makes use of the chip's TCP Segmentation Offload (TSO) feature with IPv4 and IPv6 in order to reduce CPU load while sending large amounts of data (disabled).
+- Requires High Sierra (10.13 or later).
+- Support for Energy Efficient Ethernet (EEE).
+- Support for AppleVTD, but also works without.
+- VLAN support is implemented but untested as I have no need for it.
+- The driver is published under GPLv2.
+
+Current Status
+==============
+
+- The driver has been tested successfully with I217V, I218V, I219V and 82579V with current versions of macOS.
+
+Known Issues
+============
+
+- There seem to be problems while using VMware with version 1.x.x of the driver. In case you are affected use version 2.0.0 or later.
+
+
+FAQ
+===
+
+- Could you add support of for...? Well, you are probably asking me to add support for one of the older NICs like the 82571/2/3/4L or 82583 and the answer will be no as I dropped support for these chips intentionally. They are broken and I lost more than 2 weeks trying to make it work on the 82574L without success. I was asked to add support for I210, I211 and I350 but as these chips have a completely different architecture, which isn't supported by the underlying Linux driver, this is impossible, sorry.
+- Does it work with Snow Leopard or 32 bit kernels? No and I have no plans to make a version for 32 bit kernels or anything older than Lion.
+
+Installation
+============
+
+1) Goto /S/L/E and delete AppleIntelE1000e.kext.
+2) Recreate the kernel cache.
+3) Open System Preferences and delete the corresponding network interface, e. g. en0.
+4) Reboot.
+5) Install the new driver and recreate the kernel cache. I recommend to use Kext Wizard or a similar utility for the installation.
+6) Reboot
+7) Open System Preferences again, select Network and check if the new network interface has been created automatically or create it manually now.
+8) Configure the interface.
+
+Troubleshooting
+===============
+- Make sure you have followed the installation instructions especially when you have issues with certain domains while the others are working fine.
+- Use the debug version to collect log data when trying to track down problems. The kernel log messages can be retrieved with "grep kernel /var/log/system.log" in Terminal.
+- Include the log data when asking for support or giving feedback. I'm an engineer, not a clairvoyant. Don't copy and paste large amounts of log data to your post. Create an archive with the log data and attach it to your post. In case you don't want to make your log data publicly accessible, contact me via PM and I will provide you a mail address to send it directly to me. 
+- Check your BIOS settings. You might want to disable Network Boot and the UEFI Network Stack as these can interfere with the driver.
+- Double check that you have removed any AppleIntelE1000e.kext from your system because it could prevent the driver from working properly.
+- Verify your bootloader configuration, in particular the kernel flags. Avoid using npci=0x2000 or npci=0x3000. 
+- In Terminal run netstat -s in order to display network statistics. Carefully examine the data for any unusual activity like a high number of packets with bad IP header checksums, etc.
+- In case auto-configuration of the link layer connection doesn't work it might be necessary to select the medium manually in System Preferences under Network for the interface.
+- Use Wireshark to create a packet dump in order to collect diagnostic information.
+- Keep in mind that there are many manufacturers of network equipment. Although Ethernet is an IEEE standard, different implementations may show different behavior causing incompatibilities. In case you are having trouble try a different switch or a different cable.
+
+Getting the Source Code
+=======================
+- Source code can be found on GitHub: https://github.com/Mieze/IntelMausiEthernet
+
+
+Configuration Options
+=====================
+- enableCSO6: Enables checksum offload for TCP/IPv6 (default on).
+- enableWakeOnAddrMatch: Enables wakeup on any packet with an address matching one of the machine's addresses (default off). Might be helpful to wakeup a server when a client connects but prevents the machine from sleeping when there is network activity. Keep disabled unless you need it.
+- enableWakeS5: Enables WoL from S5 (default off). Keep disabled unless you need it.
